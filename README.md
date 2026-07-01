@@ -26,7 +26,7 @@ NewsQuick is a responsive React-based news web application that delivers real-ti
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ankit-git04/NewsQuick-Real-Time-News-Web-Application.git
 ```
 
 2. Navigate to the project directory:
