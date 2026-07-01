@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# NewsQuick 📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NewsQuick is a responsive React-based news web application that delivers real-time top headlines from various categories such as Business, Entertainment, Health, Science, Sports, Technology, and General News. The application uses NewsAPI to fetch the latest news and provides an intuitive browsing experience with infinite scrolling.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Browse top headlines across multiple categories
+* Real-time news updates using NewsAPI
+* Infinite scrolling for seamless content loading
+* Responsive design for desktop and mobile devices
+* Category-based navigation
+* Loading progress indicator
+* Clean and user-friendly interface
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React.js
+* React Router DOM
+* Bootstrap
+* NewsAPI
+* React Infinite Scroll Component
+* React Top Loading Bar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone <repository-url>
+```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd NewsQuick
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+4. Create a `.env` file in the root directory and add your NewsAPI key:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+REACT_APP_NEWS_API=YOUR_API_KEY
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application will run on:
 
-## Learn More
+```text
+http://localhost:3000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```text
+src/
+├── Components/
+│   ├── Navbar.js
+│   ├── News.js
+│   ├── NewsItem.js
+│   └── Spinner.js
+├── App.js
+├── App.css
+└── index.js
+```
 
-### Code Splitting
+## Categories Available
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* General
+* Business
+* Entertainment
+* Health
+* Science
+* Sports
+* Technology
 
-### Analyzing the Bundle Size
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Home Page
+![Home Page](image/home.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
