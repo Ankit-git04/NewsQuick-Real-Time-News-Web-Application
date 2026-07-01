@@ -42,7 +42,7 @@ export default class App extends Component {
           <LoadingBar height={3} color='#f11946' progress={this.state.progress}   />
           <Routes>
           <Route exact path="/" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="general" pageSize={9} country="us" category="general" />}></Route>
-          <Route exact path="/general" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="general" pageSize={9} country="in" category="general" />}></Route>
+          <Route exact path="/general" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="general" pageSize={9} country="us" category="general" />}></Route>
           <Route exact path="/business" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="business" pageSize={9} country="us" category="business" />}></Route>
       <Route exact path="/entertainment" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="entertainment" pageSize={9} country="us" category="entertainment"/>}></Route>
           <Route exact path="/health" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="health" pageSize={9} country="us" category="health" />}></Route>
